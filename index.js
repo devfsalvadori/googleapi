@@ -1,11 +1,12 @@
-const fs = require('fs');
-const authorize = require('./auth');
-const listMajors = require('./sheetsapi');
+//const { port } = require('./config/config');
+const express = require('express');
+const app = express();
+
+require('./startup/routes')(app);
 
 
-// Load client secrets from a local file.
-fs.readFile('credentials.json', (err, content) => {
-  if (err) return console.log('Error loading client secret file:', err);
-  // Authorize a client with credentials, then call the Google Sheets API.
-  authorize(JSON.parse(content), listMajors);
-});
+
+const PORT = 8080;
+const server = app.listen(PORT, () => { console.log(`App listening on port: ${PORT}`)});
+
+module.exports = server;

@@ -1,0 +1,12 @@
+{
+    "MongoDb": {
+      "dbConfig": {
+        "uri": "mongodb+srv://fsalvadori:Pipetto123@cluster0-p8qcb.gcp.mongodb.net/project"
+      }
+    },
+    "Authentication": {
+      "jwt" : {
+        "privateKey": "defaultkey"
+      }
+    }
+}

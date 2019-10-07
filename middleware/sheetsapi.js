@@ -1,5 +1,12 @@
 const {google} = require('googleapis');
 
+// Load client secrets from a local file.
+fs.readFile('credentials.json', (err, content) => {
+  if (err) return console.log('Error loading client secret file:', err);
+  // Authorize a client with credentials, then call the Google Sheets API.
+  authorize(JSON.parse(content), listMajors);
+});
+
 /**
  * Prints the names and majors of students in a sample spreadsheet:
  * @see https://docs.google.com/spreadsheets/d/193PTDK6NdzK8YXWtpuar2E90jSNjrwg6tJpzJl99iQk/edi
