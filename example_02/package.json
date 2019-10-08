@@ -1,0 +1,14 @@
+{
+  "name": "example_02",
+  "version": "1.0.0",
+  "description": "Using info from: https://www.woolha.com/tutorials/node-js-using-google-sheets-api-with-oauth-2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^43.0.0"
+  }
+}
