@@ -6,3 +6,5 @@ coverage/
 .env
 credentials.json
 token.json
+jwt.keys.json
+oauth2.keys.json
